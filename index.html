@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>weather forecast</title>
+</head>
+<body>
+    <header>
+        <div class= "large-font">Weather Forecast</div>
+    </header>
+
+    <main>
+      <!--Search Box for weather by City-->
+      <div class="card">
+        <h3 class="card-header text-uppercase">
+          Search for a City
+        </h3>
+
+        <form id="user-form" class="card-body">
+          <label class="form-label" for="username"></label>
+          <input 
+          id="search-input" 
+          type="text" 
+          class="form-input" 
+
+          />
+
+          <button 
+          type="submit" 
+          class="btn"
+          id="search-button"
+          >
+          Search
+        </button>
+        </form>
+      </div>
+
+
+      <!--Presentantion box for weather data-->
+      <div class="col-12 col-md-8" id="history">
+        <h2>Showing Weather For</h2>
+        <section
+        id="today"
+        class="mt-5"
+        role="region"
+        >
+      </section>
+      <section
+            id="forecast"
+            class="row mt-5"
+            role="region"
+          ></section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
